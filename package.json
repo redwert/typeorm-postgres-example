@@ -7,12 +7,7 @@
   },
   "license": "Unlicense",
   "devDependencies": {
-    "@types/chai": "^4.3.3",
-    "@types/mocha": "^9.1.1",
     "@types/node": "^18.7.4",
-    "chai": "^4.3.6",
-    "mocha": "^10.0.0",
-    "ts-mocha": "^10.0.0",
     "typescript": "^4.7.4"
   },
   "dependencies": {
@@ -20,8 +15,6 @@
     "typeorm": "^0.3.7"
   },
   "scripts": {
-    "build": "tsc",
-    "dbseed": "npm run build && node dist/tasks/db/seed.js",
-    "test": "ts-mocha test/**/*.spec.ts"
+    "start": "tsc && node dist/index.js"
   }
 }
