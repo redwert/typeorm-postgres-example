@@ -15,6 +15,7 @@
     "typeorm": "^0.3.7"
   },
   "scripts": {
+    "docker": "docker-compose up -d",
     "start": "tsc && node dist/index.js"
   }
 }
